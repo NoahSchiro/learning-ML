@@ -22,7 +22,10 @@ model = tf.keras.Sequential([
     tf.keras.layers.Flatten(input_shape=(28,28)),
 
     # One hidden layer with 128 nodes. We will experiment with more less nodes
-    tf.keras.layers.Dense(128, activation='relu'),
+    tf.keras.layers.Dense(300, activation='relu'),
+    tf.keras.layers.Dense(300, activation='relu'),
+    tf.keras.layers.Dense(300, activation='relu'),
+    tf.keras.layers.Dense(300, activation='relu'),
 
     # One output layer (there can only be 10 options (0-9))
     tf.keras.layers.Dense(10)
