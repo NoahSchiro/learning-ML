@@ -22,10 +22,8 @@ model = tf.keras.Sequential([
     tf.keras.layers.Flatten(input_shape=(28,28)),
 
     # One hidden layer with 128 nodes. We will experiment with more less nodes
-    tf.keras.layers.Dense(300, activation='relu'),
-    tf.keras.layers.Dense(300, activation='relu'),
-    tf.keras.layers.Dense(300, activation='relu'),
-    tf.keras.layers.Dense(300, activation='relu'),
+    tf.keras.layers.Dense(592, activation='relu'),
+    tf.keras.layers.Dense(592, activation='relu'),
 
     # One output layer (there can only be 10 options (0-9))
     tf.keras.layers.Dense(10)
@@ -40,7 +38,7 @@ model.compile(optimizer='adam',
 
 # Feed the model the data.
 # Epochs is the amount of times the model goes over all the data
-model.fit(train_images, train_labels, epochs=10)
+model.fit(train_images, train_labels, epochs=6)
 
 # Evaluate the models preformance on our test data
 test_loss, test_acc = model.evaluate(test_images,  test_labels, verbose=1)

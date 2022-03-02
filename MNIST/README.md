@@ -15,7 +15,6 @@ Loss function: Sparse Categorical Cross entropy
 Epochs: 10
 
 Test accuracy: 97.53%
----
 
 ### Test 1: Increase nodes
 
@@ -37,3 +36,10 @@ Test accuracy: 97.26%
 
 Some indication that we got problems with overfitting (training 
 accuracy was 99.18%)
+
+
+### Test 3: Use hyperparameters
+
+Hyperparameters told us to use about 592 nodes and two layers, 6 epochs and we got a very similar 
+accuracy to our intial tests. This is likely just the peek preformance we can eek out of this 
+dataset.
